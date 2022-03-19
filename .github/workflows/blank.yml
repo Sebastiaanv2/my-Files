@@ -37,7 +37,7 @@ jobs:
       - name: move file and check what happend
         run: |
           ls
-          cp blabla.txt folder/blabla.test
+          cp blabla.test folder/blabla.test
           ls
           cd folder
           ls
