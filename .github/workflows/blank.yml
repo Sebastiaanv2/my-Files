@@ -34,6 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
       - name: move file and check what happend
         run: |
           ls
@@ -41,9 +42,18 @@ jobs:
           cp blabla.test folder/blabla.test
           ls -R
           cd folder
+
       - name: move file and check what happend
         run: |
           ls
           mkdir release
           cp -r folderx release
           ls -R
+
+      - name: Store Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact-${{github.run_number}}
+          path: |
+            release/*.exe
+            release/**/*
