@@ -39,6 +39,5 @@ jobs:
           ls
           mkdir folder
           cp blabla.test folder/blabla.test
-          ls
+          ls -R
           cd folder
-          ls
