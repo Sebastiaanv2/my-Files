@@ -35,18 +35,18 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - name: move file and check what happend
-        run: |
-          ls
-          mkdir folder
-          cp blabla.test folder/blabla.test
-          ls -R
-          cd folder
+      # - name: move file and check what happend
+      #   run: |
+      #     ls
+      #     mkdir folder
+      #     cp blabla.test folder/blabla.test
+      #     ls -R
+      #     cd folder
 
       - name: move file and check what happend
         run: |
           ls
-          mkdir release
+          # mkdir release
           cp -r folderx release
           ls -R
 
