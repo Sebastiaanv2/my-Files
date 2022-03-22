@@ -59,7 +59,7 @@ jobs:
       - name: Store Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: artifact-${{github.run_number}}-${{package-version}}
+          name: artifact-${{github.run_number}}-${{current-version}}
           path: |
             release/*.exe
             release/**/*.test
