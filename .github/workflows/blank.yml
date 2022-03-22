@@ -50,10 +50,16 @@ jobs:
           cp -r folderx release
           ls -R
 
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@master
+        with:
+          path: package.json
+
       - name: Store Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: artifact-${{github.run_number}}
+          name: artifact-${{github.run_number}}-${{package-version}}
           path: |
             release/*.exe
             release/**/*.test

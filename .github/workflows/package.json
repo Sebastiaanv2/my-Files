@@ -1,0 +1,22 @@
+{
+    "name": "angular-electron",
+    "version": "0.1.2",
+    "main": "app/main.js",
+    "private": true,
+    "scripts": {
+      "start": "npm-run-all -p electron:serve ng:serve"
+    },
+    "dependencies": {
+      "@angular/common": "13.2.4"
+    },
+    "devDependencies": {
+      "@angular-builders/custom-webpack": "13.1.0"
+    },
+    "engines": {
+      "node": ">=14.0.0"
+    },
+    "browserslist": [
+      "chrome 98"
+    ]
+  }
+  
